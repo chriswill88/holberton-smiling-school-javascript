@@ -114,7 +114,7 @@ function stary(data) {
 }
 
 function cardThrow(data) {
-    $(`#add-here`).append(`<div class='col-lg-3 col-md-6 col-sm-12'>
+    $(`#add-here`).append(`<div class='col-lg-3 col-md-4 col-sm-12'>
     <div class="card border-0">
         <img class="card-img-top holder" src="${data.thumb_url}">
         <img class="rounded-circle overlay" src="assets/images/images/play.png">
