@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="cover container-fluid">
+                <nav class="text-center navbar navbar-expand-lg navbar-dark bg-transparent">
+                    <button class="navbar-toggler mr-auto border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="mr-auto">
+                        <a class="navbar-brand d-flex flex-lg-row flex-column justify-content-center align-items-center" href="#">
+                            <img class="m-3" id="smile" src="assets/images/images/smile_off.png">
+                            <img id="logo" src="assets/images/images/logo.png">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a class="nav-item nav-link active" href="#">COURSES</a>
+                            <a class="nav-item nav-link active" href="#">PRICING</a>
+                            <a class="nav-item nav-link active" href="#">LOGIN</a>
+                        </div>
+                    </div>
+
+                  </nav>
+
+                <div class="text-center  midpage d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="mb-0 pb-0 ">Get schooled</h1>
+                    <div class="smile-words mt-2 pt-2 mb-4 pb-2">
+                        <span>SMILES</span>
+                        <span>GRIN</span>
+                        <span>LAUGH</span>
+                    </div>
+                    <button class=" rounded-pill p-2 px-3 shadow">REGISTER FOR FREE</button>
+                </div>
+        
+                <div class="text-center p-1 pb-5">
+                    <h3 class="my-5 py-5"><span>Learn</span> from the pros</h3>
+                    <div class="d-flex flex-row flex-wrap justify-content-around">
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/profile_1.jpg">
+                            <div>
+                                <p class="name">Phillip Massey</p>
+                                <span><p>« Smile of the year » 2018 - 2019</p></span>
+                            </div>
+                        </div>
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/profile_2.jpg">
+                            <div>
+                                <p class="name">Nannie Lawerence</p>
+                                <span><p>Best « little smile » 2017</p></span>
+                            </div>
+                        </div>
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/profile_3.jpg">
+                            <div>
+                                <p class="name">Bruce Walters</p>
+                                <span><p>Best « Friend Smile » live performance 2019</p></span>
+                            </div>
+                        </div>
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/profile_4.jpg">
+                            <div>
+                                <p class="name">Henry Hughes</p>
+                                <span><p>« 24h smiles » winner 2016 - 2019</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div id="carouselExampleControls" class="carousel slide carousel1" data-ride="carousel">
+                    <div id="slide-add" class="carousel-inner">
+                        <div id='load-slide' class="carousel-item carousel1-item active">  
+                            <div class="d-flex p-5 align-items-center justify-content-around flex-md-nowrap flex-wrap">
+                                <div class="loader mt-5 mb-5"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="arrow carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <img src="/assets/images/images/arrow_white_left.png">
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="arrow carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <img src="/assets/images/images/arrow_white_right.png">
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="text-dark pb-5">
+                <h1 class="text-center m-5">Most <span class="popular">popular</span> tutorials</h1>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="inam" class="carousel slide" data-ride="carousel">
+                                <div id="inner" class="carousel-inner text-dark">
+
+                                </div>
+                                <a href="#inam" class="carousel-control-prev" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a href="#inam" class="carousel-control-next" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+
+
+            <section class="member">
+                <div class="text-center p-1 pb-5">
+                    <h3 class="my-5 py-5"><span>Free</span> membership</h3>
+                    <div class="d-flex flex-row flex-wrap justify-content-around pb-2">
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/favicon.ico">
+                            <div>
+                                <p class="name">Lorem ipsum</p>
+                                <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                            </div>
+                        </div>
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/favicon.ico">
+                            <div>
+                                <p class="name">Lorem ipsum</p>
+                                <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                            </div>
+                        </div>
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/favicon.ico">
+                            <div>
+                                <p class="name">Lorem ipsum</p>
+                                <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                            </div>
+                        </div>
+                        <div class="prof">
+                            <img class="rounded-circle" src="assets/images/images/favicon.ico">
+                            <div>
+                                <p class="name">Lorem ipsum</p>
+                                <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="rounded-pill p-2 px-3 ">
+                        REGISTER FOR FREE
+                    </button>
+                </div>
+
+            </section>
+
+            <section class="text-dark pt-5">
+                <h1 class="text-center"><span class="popular">Latest</span> videos</h1>
+
+                <div class="row text-dark p-5">
+
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_2.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Sad Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_3.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Natural Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <small>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </small>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_4.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Happy Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="h-20 bg-dark d-flex flex-wrap flex-lg-row flex-column align-items-center justify-content-lg-around justify-content-center">
+
+            <div class="m-lg-5 order-0">
+                <a class=" navbar-brand" href="#">
+                    <img class="m-3" id="smile" src="assets/images/images/smile_off.png">
+                    <img id="logo" src="assets/images/images/logo.png">
+                </a>
+            </div>
+
+            <div class="m-lg-5 mb-2 footer-icons order-lg-2">
+                <a><span class="icon holberton_school-icon-ic_facebook"></span></a>
+                <a><span class="icon holberton_school-icon-ic_twitter"></span></a>
+                <a><span class="icon holberton_school-icon-ic_instagram"></span></a>
+            </div>
+
+            <div class="trademark pt-auto order-lg-1 pb-0 mb-0 align-self-lg-end">
+                <p class="text-light">©smileschool 2020</p>
+            </div>
+        </footer>
+    </body>
+</html>
