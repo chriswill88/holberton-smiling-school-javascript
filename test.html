@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <header class="cover1 container-fluid">
+                <nav class="text-center navbar navbar-expand-lg navbar-dark bg-transparent">
+                    <button class="navbar-toggler mr-auto border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="mr-auto">
+                        <a class="navbar-brand d-flex flex-lg-row flex-column justify-content-center align-items-center" href="#">
+                            <img class="m-3" id="smile" src="assets/images/images/smile_off.png">
+                            <img id="logo" src="assets/images/images/logo.png">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a class="nav-item nav-link active" href="#">COURSES</a>
+                            <a class="nav-item nav-link active" href="#">PRICING</a>
+                            <a class="nav-item nav-link active" href="#">LOGIN</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="d-flex justify-content-center">
+                    <div class="d-none p-5 d-sm-flex flex-column justify-content-center align-item-center font-weight-bold">
+                        <h1>« Don’t cry because it’s over.</h1>
+                        <h1><span class="popular">Smile</span> because it happened. »</h1>
+                    </div>
+                </div>
+            </header>
+
+            <section class="carousel1">
+                <div class="row m-0">
+                    <div class="col-lg-4 col-md-12 col-sm-12 input-group dropdown p-3 d-flex align-item-center flex-column">
+                        <small>KEYBOARD</small>
+                        <div class="d-flex flex-row">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><span class="holberton_school-icon-search_1"></span></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search by keywords" aria-label="Keyword" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 dropdown p-3 d-flex align-item-center flex-column">
+                        <small>TOPIC</small>
+                        <button class="btn btn-outline-light dropdown-toggle op" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Novice
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-12dropdown p-3 d-flex align-item-center flex-column">
+                          <small>SORT BY</small>
+                        <button class="btn btn-outline-light dropdown-toggle op" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Most Popular
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </section>
+
+            <section class="text-dark pt-5">
+                <h1 class="text-center"><span class="popular">Latest</span> videos</h1>
+
+                <div class="row text-dark p-5">
+
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_2.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Sad Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_3.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Natural Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <small>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </small>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_4.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Happy Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-sm-12'>
+                        <div class="card">
+                            <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
+                            <img class="rounded-circle overlay" src="assets/images/images/play.png">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Diagonal Smile</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <div>
+                                    <img class="rounded-circle w-25 footer-img pr-2" src="/assets/images/images/profile_1.jpg">
+                                    <small class="popular">Phillip Massey</small>
+                                </div>
+
+                                <div class="mt-2 d-flex justify-content-between">
+                                    <div>
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_on.png">
+                                        <img class="star" src="/assets/images/images/star_off.png">
+                                    </div>
+                                    <small class="popular">8 min</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </section>
+
+
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+        </main>
+        <footer class="h-20 bg-dark d-flex flex-wrap flex-lg-row flex-column align-items-center justify-content-lg-around justify-content-center">
+
+            <div class="m-lg-5 order-0">
+                <a class=" navbar-brand" href="#">
+                    <img class="m-3" id="smile" src="assets/images/images/smile_off.png">
+                    <img id="logo" src="assets/images/images/logo.png">
+                </a>
+            </div>
+  
+            <div class="m-lg-5 mb-2 footer-icons order-lg-2">
+                <a><span class="icononics holberton_school-icon-ic_facebook"></span></a>
+                <a><span class="icononics holberton_school-icon-ic_twitter"></span></a>
+                <a><span class="icononics holberton_school-icon-ic_instagram"></span></a>
+            </div>
+  
+            <div class="trademark pt-auto order-lg-1 pb-0 mb-0 align-self-lg-end">
+                <p class="text-light">©smileschool 2020</p>
+            </div>
+        </footer>
+    </body>
+</html>
