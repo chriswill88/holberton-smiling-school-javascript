@@ -299,3 +299,31 @@ button:active, button:hover {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.cdrop .btn-light {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.noOpa {
+  color: white;
+}
+
+
+#keyboard {
+  background-image: url(/assets/images/images/magbar.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 2% center;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-left: 35px;
+  color: white;
+}
+
+#keyboard::placeholder {
+  color: white;
+}
+
+.dropdown-menu {
+  width: 92%;
+  margin: 0;
+}

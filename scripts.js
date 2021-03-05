@@ -1,6 +1,3 @@
-
-
-
 function dynLoad() {
     $.get( "https://smileschool-api.hbtn.info/quotes", function( data ) {
         $( ".result" ).html( data );
@@ -25,7 +22,7 @@ function createSlide(data) {
 
 function stars(data) {
     console.log(`${data.star} from star`)
-    
+
     for (i=0; i < 5; i++) {
         if (i + 1 <= data.star) {
             $(`#star-${data.id}`).last().append('<img class="star" src="/assets/images/images/star_on.png">');
@@ -37,7 +34,7 @@ function stars(data) {
 
 function cardMake(data, id) {
     $(`#addCard-${id}`).append(`<div class='col-lg-3 col-md-6 col-sm-12'>
-    <div class="card">
+    <div class="card border-0">
         <img class="card-img-top holder" src="${data.thumb_url}">
         <img class="rounded-circle overlay" src="assets/images/images/play.png">
     
@@ -102,9 +99,23 @@ function carLoader() {
 
 
 
+function stary(data) {
+    console.log(`${data.star} from star`)
+    
+    let i;
+
+    for (i=0; i < 5; i++) {
+        if (i + 1 <= data.star) {
+            $(`#stary-${data.id}`).last().append('<img class="star" src="/assets/images/images/star_on.png">');
+        } else {
+            $(`#stary-${data.id}`).last().append('<img class="star" src="/assets/images/images/star_off.png">');
+        }
+    };
+}
+
 function cardThrow(data) {
     $(`#add-here`).append(`<div class='col-lg-3 col-md-6 col-sm-12'>
-    <div class="card">
+    <div class="card border-0">
         <img class="card-img-top holder" src="${data.thumb_url}">
         <img class="rounded-circle overlay" src="assets/images/images/play.png">
     
@@ -119,7 +130,7 @@ function cardThrow(data) {
             </div>
     
             <div class="mt-2 d-flex justify-content-between">
-                <div id='star-${data.id}'>
+                <div id='stary-${data.id}'>
                     
                 </div>
                 <small class="popular">${data.duration}</small>
@@ -127,24 +138,41 @@ function cardThrow(data) {
         </div>
     </div>
     </div>`);
-
-    stars(data);
-
-    
+    stary(data);
 }
 
-function search() {
-    $.get( "https://smileschool-api.hbtn.info/courses", function( data ) {
-        $( ".result" ).html( data );
-        console.log("here")
-        console.log(data);
-        for (i of data.courses) {
-            console.log(i)
-            cardThrow(i);
+
+function search(sValue, sTopic, sSort) {
+    loader = `<div class="loader mt-5 mb-5" id='load'></div>`
+    $('#create-here').append(loader)
+
+    $.ajax({
+        url: "https://smileschool-api.hbtn.info/courses",
+        type: "get", //send it through get method
+        data: { 
+          q: sValue,
+          topic: sTopic,
+          sort: sSort
+        },
+        success: function(response) {
+            $('#add-here').remove()
+            $('#create-here').append(`<div id='add-here' class="row text-dark p-5">
+            </div>`)
+
+            console.log("here")
+            console.log(response);
+            for (i of response.courses) {
+                console.log(i)
+                cardThrow(i);
+            }
+            $('#load').remove();
+
+        },
+        error: function(xhr) {
+          console.log("ERROOR!!!! NOT WORK!! FIND HELP!! DESTRUCTION EMMINANT")
         }
-    });
+      });
 }
-
 
 
 
@@ -152,8 +180,35 @@ function search() {
 // window.onload(dynLoad());
 
 window.onload = function() {
+
+
     dynLoad();
     carLoader();
     search();
 
+    let sTal = '';
+    let sTop = '';
+    let sSort = '';
+
+    $("#keyboard").on('keyup', function () {
+        sTal = this.value;
+        search(sTal, sTop, sSort);
+        console.log(this.value)
+    });
+
+    $(".topic .dropdown-item").on('click', function () {
+        sTop = this.text;
+        $("#top").text(this.text);
+        search(sTal, sTop, sSort);
+        
+    });
+
+    $(".sort-by .dropdown-item").on('click', function () {
+        sSort = this.text;
+        $("#sort").text(this.text);
+
+        sSort = sSort.replace(' ', '_');
+        search(sTal, sTop, sSort);
+
+    });
 }

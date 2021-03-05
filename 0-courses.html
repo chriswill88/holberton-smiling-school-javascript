@@ -5,8 +5,8 @@
         <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
@@ -47,36 +47,40 @@
                     <div class="col-lg-4 col-md-12 col-sm-12 input-group dropdown p-3 d-flex align-item-center flex-column">
                         <small>KEYBOARD</small>
                         <div class="d-flex flex-row">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><span class="holberton_school-icon-search_1"></span></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Search by keywords" aria-label="Keyword" aria-describedby="basic-addon1">
+                            <input id="keyboard" type="text" class="form-control" placeholder="Search by keywords" aria-label="Keyword" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 dropdown p-3 d-flex align-item-center flex-column">
-                        <small>TOPIC</small>
-                        <button class="btn btn-outline-light dropdown-toggle op" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Novice
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
 
-                      <div class="col-lg-4 col-md-6 col-sm-12dropdown p-3 d-flex align-item-center flex-column">
-                          <small>SORT BY</small>
-                        <button class="btn btn-outline-light dropdown-toggle op" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Most Popular
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
+                    <div class="cdrop col-lg-4 col-md-12 col-sm-12 dropdown p-3 d-flex align-item-center flex-column">
+                        <small>TOPIC</small>
+
+                        <a class="btn btn-light border-0 dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" id="dropdownMenuLink " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="noOpa" id="top">All</span>
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Novice</a>
+                            <a class="dropdown-item" href="#">Intermediate</a>
+                            <a class="dropdown-item" href="#">Expert</a>
+                        </div>
+                    </div>
+
+                    <div class="cdrop col-lg-4 col-md-12 col-sm-12 dropdown p-3 d-flex align-item-center flex-column">
+                        <small>SORT BY</small>
+
+                        <a class="btn btn-light border-0 dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="noOpa" id="sort">Most popular</span>
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Most popular</a>
+                            <a class="dropdown-item" href="#">Most recent</a>
+                            <a class="dropdown-item" href="#">Most viewed</a>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
 
@@ -86,7 +90,7 @@
                 <div class="row text-dark p-5">
 
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -114,7 +118,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_2.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -142,7 +146,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_3.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -170,7 +174,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_4.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -198,7 +202,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -226,7 +230,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -254,7 +258,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -282,7 +286,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -310,7 +314,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -338,7 +342,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -366,7 +370,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -394,7 +398,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -422,7 +426,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -450,7 +454,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -478,7 +482,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -506,7 +510,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
@@ -534,7 +538,7 @@
                         </div>
                     </div>
                     <div class='col-lg-3 col-md-6 col-sm-12'>
-                        <div class="card">
+                        <div class="card border-0">
                             <img class="card-img-top" src="/assets/images/images/thumbnail_1.jpg" alt="Card image cap">
                             <img class="rounded-circle overlay" src="assets/images/images/play.png">
                             
